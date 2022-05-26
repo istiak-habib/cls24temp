@@ -1,0 +1,382 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'League Spartan', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* header */
+
+.header{
+    background-color: #e7e6e6;
+    padding: 0%;
+}
+
+.h-pic {
+    width: 80px;
+}
+
+.header-menu li {
+    display: inline-block;
+    position: relative;
+    padding: 20px 0px;
+    margin-left: 35px;
+}
+
+.header-menu li:first-child{
+    margin-left: 0px;
+}
+
+.header-menu li a {
+    color: #595858;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.header-menu li:hover a{
+    color: rgb(128, 128, 255);
+}
+
+.header-menu li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: rgb(128, 128, 255);
+    transition: .4s;
+}
+
+.header-menu li:hover::after{
+    width: 100%;
+}
+
+/* dropdown */
+
+.dropdown{
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 190px;
+    color: #fff;
+    background-color: rgb(128, 128, 255);
+    padding: 10px 22px;
+    border: 20px solid white;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.header-menu li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+}
+
+.dropdown li {
+    padding: 10px 0px;
+}
+
+.dropdown li:hover::after{
+   height: 0;
+   width: 0; 
+}
+
+.dropdown li a{
+    font-size: 15px;
+    color: #fff !important;
+}
+
+.button1 a {
+    background-color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(128, 128, 255);
+    position: relative;
+    transition: .4s;
+    z-index: 1;
+}
+
+.button1 a:hover{
+    color: #fff;
+}
+
+.button1 a::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 30px;
+    background-color: rgb(128, 128, 255);
+    z-index: -1;
+    transition: .4s;
+}
+
+.button1 a:hover::after{
+    width: 100%;
+}
+
+/* banner */
+
+.banner{
+    background-color: #eef6ff;
+}
+
+.banner-content {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner-info h1 {
+    font-size: 35px;
+    font-weight: 500;
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.banner-info p {
+    font-size: 16px;
+    width: 580px;
+    margin-bottom: 40px;
+}
+
+.button2 a {
+    background-color: rgb(128, 128, 255);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    border: 2px solid rgb(128, 128, 255);
+    position: relative;
+    transition: .4s;
+    z-index: 1;
+}
+
+.button2 a:hover{
+    color: rgb(128, 128, 255);
+    background-color: #fff;
+    border: 2px solid rgb(128, 128, 255);
+}
+
+.banner{
+    overflow: hidden;
+}
+
+.banner-pic img {
+    height: 600px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 70px;
+    left: 140px;
+}
+
+/* about */
+
+.about-top h6 {
+    color: rgb(128, 128, 255);
+}
+
+.about-top h1 {
+    width: 600px;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.about-top h1::after{
+    content: "";
+    width: 7%;
+    height: 3px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgb(128, 128, 255);
+}
+
+.about-top p {
+    width: 500px;
+    font-size: 16px;
+}
+
+.about-bottom {
+    background-color: #fafdff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .1);
+    transition: .5s;
+    z-index: 1;
+}
+
+.about-bottom:hover{
+    background-color: rgb(128, 128, 255);
+    transform: scale(1.05);
+}
+
+.about-bottom:hover .ab-icon i{
+    color: rgb(128, 128, 255);
+    background-color: #fff;
+}
+
+.about-bottom:hover .ab-title{
+    color: #fff;
+}
+
+.about-bottom:hover .ab-footer{
+    color: #fff !important;
+}
+
+.about-bottom:hover .ab-icon::after{
+    background-color: #fff;
+    width: 90%;
+}
+
+.ab-icon i {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(128, 128, 255);
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 40px 40px 40px 0px;
+    margin-bottom: 40px;
+}
+
+.ab-icon{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.ab-icon::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgb(128, 128, 255);
+    transition: .5s;
+}
+
+.a-pic {
+    display: inline-block;
+    position: absolute;
+    left: 2%;
+    top: 57%;
+    z-index: -1;
+}
+
+/* service */
+
+.service {
+    background: url(img/service.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
+}
+
+.service::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #21283d;
+    opacity: .8;
+}
+
+.service-content {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.service-all {
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    width: 380px;
+    z-index: 1;
+    position: relative;
+}
+
+.service-middle h2::after{
+    content: "";
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    bottom: 77%;
+    left: 35%;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.service-icon{
+    margin-top: 100px;
+}
+
+.service-icon span i {
+    color: rgb(128, 128, 255);
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+}
+
+.service-icon span{
+    position: relative;
+}
+
+.service-icon span::before{
+    content: "";
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -215%;
+    left: -12%;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    animation-name: hmb;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.service-icon span::after{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -260%;
+    left: -24%;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    animation-name: hmb;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hmb {
+    form{
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{
+        opacity: 0;
+        transform: scale(2);
+    }
+}
